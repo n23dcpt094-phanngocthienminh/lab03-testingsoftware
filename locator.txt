@@ -1,0 +1,8 @@
+Locator
+
+Username: By.NAME, "username"
+Password: By.NAME, "password"
+Login button: //button[text()='LOGIN']
+Forgot Password: By.LINK_TEXT, "Forgot password?"
+Sign Up: By.LINK_TEXT, "SIGN UP"
+Social login: a[href*='facebook'], a[href*='twitter'], a[href*='google']

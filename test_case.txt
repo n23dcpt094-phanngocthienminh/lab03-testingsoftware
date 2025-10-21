@@ -1,0 +1,67 @@
+LAB 03 - TESTING LOGIN FORM
+TEST CASE LIST
+[TC01] LOGIN SUCCESS
+
+Steps:
+
+Nhập username = admin
+
+Nhập password = 123456
+
+Click LOGIN
+Expected:
+→ Hiển thị Dashboard hoặc "Login success"
+
+[TC02] WRONG PASSWORD
+
+Steps:
+
+Nhập username = admin
+
+Nhập password = wrong
+
+Click LOGIN
+Expected:
+→ Hiển thị thông báo "Invalid username or password"
+
+[TC03] BLANK USERNAME
+
+Steps:
+
+Để trống Username
+
+Nhập password = 123456
+
+Click LOGIN
+Expected:
+→ Hiển thị cảnh báo "Please enter username"
+
+[TC04] BLANK PASSWORD
+
+Steps:
+
+Nhập username = admin
+
+Để trống Password
+
+Click LOGIN
+Expected:
+→ Hiển thị cảnh báo "Please enter password"
+
+[TC05] FORGOT PASSWORD LINK
+
+Steps:
+
+Click link "Forgot password?"
+Expected:
+→ Điều hướng sang trang Reset Password
+
+[TC06] SOCIAL LOGIN BUTTONS
+
+Steps:
+
+Kiểm tra hiển thị 3 nút: Facebook, Twitter, Google
+
+Click từng nút
+Expected:
+→ Điều hướng đến trang OAuth login tương ứng
